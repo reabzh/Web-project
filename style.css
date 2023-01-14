@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Raleway:wght@200&display=swap');
+
+*{
+    font-family:'Nunito', 'Raleway', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+/*menu bar style*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1;
+    background: white;
+    padding: 15px;
+    box-shadow: -4px 4px 2px #D6CCC2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 25px;
+    color:#D6CCC2;
+}
+
+header .logo span{
+    color:#A5A58D;
+}
+
+header .navbar a{
+    color: #D6CCC2;
+    padding: 5px;
+}
+
+header .navbar a:hover{
+    color:#A5A58D;
+}
+
+header .icons #menu-bar,
+header .icons{
+    border-radius: 5px;
+    margin-right: 5px;
+    background: #F5EBE0;
+}
+
+header .icons #menu-bar:hover,
+header .icons a:hover{
+    background: #D6CCC2;
+}
+
+header .icons #menu-bar{
+    display: none;
+} 
+
+/*----------------------------*/
+
+/*body part*/
+body{
+    background: white;
+    min-height: 100vh;
+    background: url(BICUBIK_1183.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: white;
+    text-decoration: underline;
+    font-size: 60px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+.btn_h1{
+    width: 200px;
+    margin-top: 100px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn_h1:hover{
+    color: white;
+    background-color: #6B705C;
+}
+
+/*Home section style*/
+section{
+    padding: 20px;
+}
+
+.home{
+    min-height: 100vh;
+    background: url(BICUBIK_1183.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home form{
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.659);
+    border: 2px solid #A5A58D;
+    box-shadow: -1px 1px 2px #d6ccc2;
+    border-radius: 3px;
+    width: 500px;
+    padding: 10px;
+
+}
+
+.home form h3{
+    text-align: center;
+    color: #6B705C;
+}
+
+.home form .button-container{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 3px;
+    color: #F5EBE0;
+    background: #A5A58D;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #6B705C;
+    color: white;
+}
+
+.home form .button-container .btn{
+    flex:1;
+    text-align: center;
+}
+
+.home form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.home form .inputBox input,
+.home form .inputBox select{
+    flex: 10px;
+    border: 2px solid #A5A58D; 
+    box-shadow: -4px 4px 6px #D6CCC2;
+    padding: 10px;
+    text-transform: none;
+}
+
+.home form .btn{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*----------------------------*/
+
+/*media quairy part*/
+
+@media (max-width:991px){
+    html{
+    font-size: 15px;
+
+    }
+
+    header{
+        padding: 10px;
+    }
+
+    section{
+        padding: 5px;
+    }
+}
+
+@media (max-width:768px){
+    header .icons #menu-bar{
+        display: inline-block;
+    } 
+
+    header .navbar{
+        position: absolute;
+        left:0; right: 0; top:100%;
+        background: white;
+        border-top: 2px solid gray ;
+        border-bottom:2px solid gray  ;
+        transition: 2px linear;
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 5px;
+        margin: 5px;
+        background: white;
+        border: 2px solid gray;
+        box-shadow: -4px 4px 6px #D6CCC2;
+        text-align: center;
+        border-radius: 3px;
+    }
+}
+
+@media (max-width:450px){
+    html{
+    font-size: 12px;
+    }
+}
