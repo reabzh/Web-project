@@ -232,7 +232,6 @@ section{
 
 
 
-
 /*----------------------------*/
 
 /*contact part*/.contact .icons-container{
@@ -257,13 +256,13 @@ section{
 }
 
 .contact .icons-container .icons h3{
-    font-size: 10px;
+    font-size: 20px;
     color:#333;
     padding: 2rem;
 }
 
 .contact .icons-container .icons p{
-    font-size: 20px;
+    font-size: 30px;
     color:#666;
     padding:.1rem 0;
 }
@@ -320,4 +319,5 @@ section{
 }
 
 /*----------------------------*/
+
 
