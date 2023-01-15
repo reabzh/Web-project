@@ -21,7 +21,7 @@ header{
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1;
-    background: white;
+    background: rgb(252, 250, 250);
     padding: 15px;
     box-shadow: -4px 4px 2px #D6CCC2;
     display: flex;
@@ -45,7 +45,8 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-    color:#A5A58D;
+    color:#689430;
+    text-decoration: underline;
 }
 
 header .icons #menu-bar,
