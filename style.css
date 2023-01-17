@@ -10,7 +10,6 @@
 }
 
 html{
-    font-size: 20px;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
@@ -20,24 +19,16 @@ html{
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    z-index: 1;
+    z-index: 2;
     background: rgb(252, 250, 250);
     padding: 15px;
     box-shadow: -4px 4px 2px #D6CCC2;
     display: flex;
+    font-size: 20px;
     align-items: center;
     justify-content: space-between;
 }
 
-header .logo {
-    font-weight: bold;
-    font-size: 25px;
-    color:#D6CCC2;
-}
-
-header .logo span{
-    color:#A5A58D;
-}
 
 header .navbar a{
     color: #D6CCC2;
@@ -68,38 +59,59 @@ header .icons #menu-bar{
 /*----------------------------*/
 
 /*body part*/
-body{
-    background: white;
-    min-height: 100vh;
-    background: url(BICUBIK_1183.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #d6ccc255 ;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-h1{
-    color: white;
-    text-decoration: underline;
-    font-size: 60px;
-    margin-bottom: 100px;
-    align-items: center;
-    justify-content: center;
-    font-weight: lighter;
+    justify-items: center;
 }
 
-.btn_h1{
-    width: 200px;
-    margin-top: 100px;
+.swiper{
+    width: 100%;
+    height: 100%;   
+    z-index: 1;
+
+}
+
+.swiper-slide img{
+    width: 100%;  
+
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: white;
+}
+
+.swiper .swiper-pagination-bullet-active{
+background: white;
+}
+
+
+#textHome{
+    color: #787868;
+    font-size: 50px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+#btn_searchProperty{
+    margin-left: 150px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    width: 175px;
     cursor: pointer;
     font-size: 18px;
+    background-color: #A5A58D;
 }
 
-.btn_h1:hover{
+#btn_searchProperty:hover{
     color: white;
     background-color: #6B705C;
 }
+
+/*----------------------------*/
 
 /*Home section style*/
 section{
@@ -107,28 +119,23 @@ section{
 }
 
 .home{
-    min-height: 100vh;
-    background: url(BICUBIK_1183.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+     height: 100vh;
+    background-image: url(BICUBIK_1121.jpg);
 }
 
 .home form{
-    margin: 5px;
+    margin: 150px;
+    margin-left: 35%;
     background: rgba(255, 255, 255, 0.659);
-    border: 2px solid #A5A58D;
     box-shadow: -1px 1px 2px #d6ccc2;
     border-radius: 3px;
     width: 500px;
     padding: 10px;
-
+    align-items: center;
+    font-size: 22px;
 }
 
-.home form h3{
+.home form p{
     text-align: center;
     color: #6B705C;
 }
@@ -138,7 +145,7 @@ section{
     gap: 20px;
 }
 
-.btn{
+.btn_submit{
     margin-top: 10px;
     display: inline-block;
     padding: 8px;
@@ -146,15 +153,15 @@ section{
     color: #F5EBE0;
     background: #A5A58D;
     cursor: pointer;
+    width: 100%;
 }
 
-.btn:hover{
+.btn_submit:hover{
     background: #6B705C;
     color: white;
 }
 
-.home form .button-container .btn{
-    flex:1;
+.home form .button-container .btn_submit{
     text-align: center;
 }
 
@@ -172,11 +179,6 @@ section{
     box-shadow: -4px 4px 6px #D6CCC2;
     padding: 10px;
     text-transform: none;
-}
-
-.home form .btn{
-    width: 100%;
-    margin-top: 10px;
 }
 
 /*----------------------------*/
@@ -320,32 +322,54 @@ section{
 }
 
 /*----------------------------*/
+/*services section on home page*/
+
+.services {
+    font-size: 50px;
+    text-align: center;
+    color: #787868;
+}
+
 .services .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap:5px;
 }
 
 .services .box-container .box{
-    flex:1 1 30rem;
-    border-radius: .5rem;
+    width: 400px;
+    border-radius: 3px;
     background:#fff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: -1px 1px 2px rgba(0,0,0,.1);
+    border: 2px solid rgba(0,0,0,.2);
     text-align: center;
-    padding:2rem;
+    padding:10px;
+    text-align: center;
+    margin-left: 5%;
 }
 
 .services .box-container .box h3{
-    font-size: 2.5rem;
-    color:#333;
+    font-size: 20px;
+    color:#689430;
 }
 
 .services .box-container .box p{
-    font-size: 1.5rem;
+    font-size:15px;
     color:#666;
-    padding:.5rem 0;
+    padding:5px;
     line-height: 2;
+}
+
+#btn_LearnMore{
+    color: #689430;
+    cursor: pointer;
+    font-size:15px;
+}
+
+#btn_LearnMore:hover{
+    background-color: #A5A58D;
+    color: white;
+    width: 50px;
 }
 
 /*----------------------------*/
