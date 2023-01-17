@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Real Estate</title>
+    <title>MY HOME</title>
 
     <link rel="stylesheet" href="style.css">
-
+    
+    <!--to swipe the background on the home page-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> 
 </head>
 
 <body>
@@ -14,7 +17,7 @@
     <!--header section starts-->
     <header>
 
-        <img src="MyHome.jpg" alt="MyHome logo" width="97" height="80"/>
+        <img src="MyHome.jpg" alt="MyHome logo" width="80" height="60"/>
 
         <nav class="navbar">
             <a href="#home">home</a>
@@ -25,19 +28,106 @@
         </nav>
 
         <div class="icons">
-            <!-- <span id="#menu-bar" class="bar"><img src="menubar.png" height="30px" width="30px" ></span> <!--صورة-->
             <a href="#" class="heart"><img src="user.png" height="30px" width="30px"></a> <!--صورة-->
             <a href="#" class="uesr"><img src="heart.png" height="30px" width="30px"></a> <!--صورة-->
         </div>
     </header>
     <!--header section ends-->
 
-    <h1>Looking For A New Home?</h1>
+    <div class="container">
 
-    <form action="home.html" >
-        <input type="submit" value="search property" class="btn_h1">
-    </form>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="BICUBIK_1121.jpg"></div>
+              <div class="swiper-slide"><img src="BICUBIK_1183.jpg"></div>
+              <div class="swiper-slide"><img src="BICUBIK_1184.jpg"></div>
+              <div class="swiper-slide"><img src="BICUBIK_1221.jpg"></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
+        
+
+          <span>
+            <p id="textHome">Looking  For A New Home?</p>
+            <form action="home.html" >
+                <input type="submit" value="search property" id="btn_searchProperty">
+            </form>
+          </span>
+    </div>
+
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+
+        <p><span style="color:#689430">Our</span> Services</p>
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <img src="buyingHome.png" width="70" height="70">
+                <h3>buying home</h3>
+                <p>we offer to our special clints the perfect home that the cilent seek with the best luxury areas, need
+                    more?</p>
+                <a href="#" id="btn_LearnMore">learn more</a>
+            </div>
+
+            <div class="box">
+
+                <img src="rent.png" width="70" height="70">
+                <h3>renting home</h3>
+                <p>you can rent home that exceed your imagination with the perfect view ,need more?</p>
+                <a href="#" id="btn_LearnMore">learn more</a>
+            </div>
+
+            <div class="box">
+
+                <img src="sellingHome.png" width="70" height="70">
+                <h3>selling home</h3>
+                <p>without having a trouble searching for a realestate can sell your home ,we provide the best service
+                    in addtion eseay way possible,need more ?</p>
+                <a href="#" id="btn_LearnMore">learn more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- services section ends -->
+   
     
+     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+            const swiper = new Swiper('.swiper', {
+               
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+
+                loop: true,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },                   
+            });
+    </script>
 
 </body>
 
