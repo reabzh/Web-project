@@ -108,6 +108,8 @@ footer {
 
 .footer .footer-container .box-container .box{
     flex:1 1 25rem;
+    border: .1rem solid white;  /*line 111&112 to solve the conflict with line475*/
+    box-shadow: 0 .5rem 1rem white;
 }
 
 .footer .footer-container .box-container .box h3{
