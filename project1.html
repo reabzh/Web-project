@@ -16,15 +16,13 @@
 
     <!--header section starts-->
     <header>
+        <img id="img" src="images/MyHome.jpg" alt="MyHome logo" width="85" height="70" hidden/>
 
-
-        <img src="images/MyHome.jpg" alt="MyHome logo" width="85" height="70"/>
-
-        <nav class="navbar">
+        <nav class="navbar" >
             <a href="#home">home</a>
+            <a href="#aboutus">about us</a>
             <a href="#services">services</a>
-            <a href="#featured.html">featured</a>
-            <a href="#agents">agents</a>
+            <a href="featured.html">featured</a>
             <a href="contact.html">contact</a>
         </nav>
 
@@ -62,8 +60,22 @@
             <form action="home.html" >
                 <input type="submit" value="search property" id="btn_searchProperty">
             </form>
-          </span>
-    </div>
+          </span>   
+        </div>
+
+        <section class="services" id="aboutus">
+        
+            <img id="img" src="images/0000.png">
+
+            <p ><span style="color:#689430;">About</span> Us</p>
+            <p id="paragraph">
+                If you're looking for property for sale and property to let in Riyadh, and the surrounding areas then you've
+                come to the right place.<br> MY HOME is a real estate in Riyadh to help more tenants, landlords, developers,
+                buyers and sellers with their property needs whether you're looking to buy a house, sell a house or rent a
+                house.
+            </p>
+        
+        </section>
 
     <!-- services section starts  -->
 
@@ -146,28 +158,8 @@
    
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 
-    <script>
-            const swiper = new Swiper('.swiper', {
-               
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-
-                loop: true,
-
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },                   
-            });
-    </script>
 
 </body>
 
