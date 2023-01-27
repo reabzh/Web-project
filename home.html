@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Real Estate</title>
-    
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <!--header section starts-->
-     <header>
+<head>
+    <meta charset="UTF-8">
+    <title>MY HOME</title>
 
-        <img src="MyHome.jpg" alt="MyHome logo" width="80" height="60"/>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <nav class="navbar">
+<body>
+    <!--header section starts-->
+    <header>
+        <img id="img" src="images/MyHome.jpg" alt="MyHome logo" width="85" height="70" hidden/>
+
+        <nav class="navbar" >
             <a href="project1.html">home</a>
-            <a href="#services">services</a>
-            <a href="#featured">featured</a>
-            <a href="#agents">agents</a>
-            <a href="#contact">contact</a>
+            <a href=" project1.html #aboutus">about us</a>
+            <a href=" project1.html #services">services</a>
+            <a href="featured.html">featured</a>
+            <a href="contact.html">contact</a>
         </nav>
 
         <div class="icons">
-            <a href="#" class="heart"><img src="user.png" height="30px" width="30px"></a> <!--صورة-->
-            <a href="#" class="uesr"><img src="heart.png" height="30px" width="30px"></a> <!--صورة-->
+            <a href="#" class="heart"><img src="images/user.png" height="30px" width="30px"></a> <!--صورة-->
+            <a href="#" class="uesr"><img src="images/heart.png" height="30px" width="30px"></a> <!--صورة-->
         </div>
     </header>
     <!--header section ends-->
-    
-         <!--Home section starts-->
+
+    <!--Home section starts-->
     <section class="home" id="#home">
         <form action="">
-            <h3>Find your perfect home</h3>
+            <p>Find your perfect home</p>
 
             <div class="button-container">
-                <a href="#" class="btn">for rent</a>
-                <a href="#" class="btn">for sell</a>
+                <a href="#" class="btn" id="rent" >for rent</a>
+                <a href="#" class="btn" id="sell">for sell</a>
             </div>
 
             <div class="inputBox">
                 <input type="search" name="search1" placeholder="neighborhood" id="">
-                <input type="search" name="search2" placeholder="city" id="">
-                <select name="" id="">
-                    <option value=""disbled hidden selected>minimum price</option>
-                    <option value="3000SAR"> 3000SAR</option>
-                    <option value="4000SAR"> 4000SAR</option>
-                    <option value="5000SAR"> 5000SAR</option>
-                    <option value="6000SAR"> 6000SAR</option>
+
+                <select id="minprice"  >
+                    <option value="" disbled hidden selected>minimum price</option>
+                    <option value="200,000SAR"> 200,000SAR</option>
+                    <option value="300,000SAR"> 300,000SAR</option>
+                    <option value="400,000SAR"> 400,000SAR</option>
+                    <option value="500,000SAR"> 500,000SAR</option>
                 </select>
 
-                <select name="" id="">
-                    <option value=""disbled hidden selected>maxmium price</option>
-                    <option value="7000SAR"> 7000SAR</option>
-                    <option value="8000SAR"> 8000SAR</option>
-                    <option value="9000SAR"> 9000SAR</option>
-                    <option value="10000SAR"> 10000SAR</option>
+                <select id="maxprice">
+                    <option value="" disbled hidden selected>maxmium price</option>
+                    <option value="2,000,000SAR"> 2,000,000SAR</option>
+                    <option value="2,000,000SAR"> 4,000,000SAR</option>
+                    <option value="2,000,000SAR"> 8,000,000SAR</option>
+                    <option value="2,000,000SAR"> 30,000,000SAR</option>
                 </select>
 
-                <select name="" id="">
-                    <option value=""disbled hidden selected> property status</option>
+                <select id="status">
+                    <option value=""> property status</option>
                     <option value="Ready To Move"> Ready To Move</option>
                     <option value="Under construction"> Under construction</option>
                     <option value="furnished"> furnished</option>
                     <option value="unfurnished"> unfurnished</option>
                 </select>
 
-                <select name="" id="">
-                    <option value=""disbled hidden selected> property type</option>
-                    <option value="flat"> flat</option>
-                    <option value="house"> house</option>
-                    <option value="shop"> shop</option>
-                    <option value="warehouse"> warehouse</option>
+                <select id="type">
+                    <option value="" > property type</option>
+                    <option value="flat"> duplex</option>
+                    <option value="house"> villa</option>
+                    <option value="shop"> Mansion</option>
                 </select>
 
-                <select name="" id="">
-                    <option value=""disbled hidden selected> BHK</option>
+                <select id="bhk">
+                    <option value=""> BHK</option>
                     <option value="1BHK"> 1BHK</option>
                     <option value="2BHK"> 2BHK</option>
                     <option value="3BHK"> 3BHK</option>
@@ -82,10 +81,11 @@
                 </select>
             </div>
 
-            <input type="submit" value="search property" class="btn">
+            <input type="button" value="search property" class="btn" id="search">
         </form>
     </section>
     <!--Home section ends-->
+
     <!-- Footer starts -->
     <footer class="footer">
 
@@ -94,8 +94,8 @@
                 <div class="box">
                     <h3>branch location</h3>
                     <a href="#">Saudi Arabia, Riyadh</a>
-                </div> 
-        
+                </div>
+
                 <div class="box">
                     <h3>quick links</h3>
                     <a href="#">home</a>
@@ -103,14 +103,14 @@
                     <a href="#">featured</a>
                     <a href="#">agents</a>
                     <a href="#">contact</a>
-                </div> 
+                </div>
 
                 <div class="box">
-                   <h3>extra links</h3>
-                   <a href="#">my account</a>
-                   <a href="#">my favorite</a>
-                   <a href="#">my list</a>
-                </div> 
+                    <h3>extra links</h3>
+                    <a href="#">my account</a>
+                    <a href="#">my favorite</a>
+                    <a href="#">my list</a>
+                </div>
 
                 <div class="box">
                     <h3>follow us</h3>
@@ -118,13 +118,15 @@
                     <a href="#">twitter</a>
                     <a href="#">instagram</a>
                     <a href="#">linkedin</a>
-               </div> 
+                </div>
             </div>
             <div class="credit">Copyright &copy; 2032 All rights reserved |by </div>
         </div>
-    </footer>
-    <!-- Footer ends -->
+    </footer> -->
+    <!-- Footer ends --> 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
 
-    </body>
 </html>
