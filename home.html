@@ -11,9 +11,9 @@
 <body>
     <!--header section starts-->
     <header>
-        <img id="img" src="images/MyHome.jpg" alt="MyHome logo" width="85" height="70" hidden/>
+        <img id="img" src="images/MyHome.jpg" alt="MyHome logo" width="85" height="70" hidden />
 
-        <nav class="navbar" >
+        <nav class="navbar">
             <a href="project1.html">home</a>
             <a href=" project1.html #aboutus">about us</a>
             <a href=" project1.html #services">services</a>
@@ -34,14 +34,14 @@
             <p>Find your perfect home</p>
 
             <div class="button-container">
-                <a href="#" class="btn" id="rent" >for rent</a>
+                <a href="#" class="btn" id="rent">for rent</a>
                 <a href="#" class="btn" id="sell">for sell</a>
             </div>
 
             <div class="inputBox">
-                <input type="search" name="search1" placeholder="neighborhood" id="">
+                <input type="search" name="search1" placeholder="neighborhood">
 
-                <select id="minprice"  >
+                <select id="minprice">
                     <option value="" disbled hidden selected>minimum price</option>
                     <option value="200,000SAR"> 200,000SAR</option>
                     <option value="300,000SAR"> 300,000SAR</option>
@@ -52,9 +52,9 @@
                 <select id="maxprice">
                     <option value="" disbled hidden selected>maxmium price</option>
                     <option value="2,000,000SAR"> 2,000,000SAR</option>
-                    <option value="2,000,000SAR"> 4,000,000SAR</option>
-                    <option value="2,000,000SAR"> 8,000,000SAR</option>
-                    <option value="2,000,000SAR"> 30,000,000SAR</option>
+                    <option value="4,000,000SAR"> 4,000,000SAR</option>
+                    <option value="8,000,000SAR"> 8,000,000SAR</option>
+                    <option value="30,000,000SAR"> 30,000,000SAR</option>
                 </select>
 
                 <select id="status">
@@ -66,10 +66,10 @@
                 </select>
 
                 <select id="type">
-                    <option value="" > property type</option>
-                    <option value="flat"> duplex</option>
-                    <option value="house"> villa</option>
-                    <option value="shop"> Mansion</option>
+                    <option value=""> property type</option>
+                    <option value="duplex"> duplex</option>
+                    <option value="villa"> villa</option>
+                    <option value="Mansion"> Mansion</option>
                 </select>
 
                 <select id="bhk">
@@ -81,52 +81,385 @@
                 </select>
             </div>
 
-            <input type="button" value="search property" class="btn" id="search">
+            <input type="button" value="search property" class="btn" onclick="show()">
         </form>
     </section>
     <!--Home section ends-->
 
-    <!-- Footer starts -->
-    <footer class="footer">
+    <section class="featured" id="featured">
+        <div class="box-container">
 
-        <div class="footer-container">
-            <div class="box-container">
-                <div class="box">
-                    <h3>branch location</h3>
-                    <a href="#">Saudi Arabia, Riyadh</a>
+            <div class="box" id="hidden1">
+                <div class="image-container">
+
+                    <img src="images/homes/home1.jpg" alt="">
+
+                    <div class="info">
+                        <h3>9 days ago</h3>
+                        <h3>for sell</h3>
+                    </div>
+
+                    <div class="icons">
+                        <a href="#"><img src="images/fas fa-film.png" />
+                            <h3>1</h3>
+                        </a>
+                        <a href="#"><img src="images/fas fa-camera.png" />
+                            <h3>4</h3>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="box">
-                    <h3>quick links</h3>
-                    <a href="#">home</a>
-                    <a href="#">services</a>
-                    <a href="#">featured</a>
-                    <a href="#">agents</a>
-                    <a href="#">contact</a>
+                <div class="content">
+
+                    <div class="price">
+                        <h3>2,594,000 SAR</h3>
+                        <a href="#"><img src="images/fas fa-heart.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-envelope.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-phone.PNG" width="30" height="30" /></a>
+                    </div>
+                    <div class="location">
+                        <h3>modern villa</h3>
+                        <p>Al Wadi, Riyadh - 400104</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 250 sqft </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 5 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">request info</a>
+                        <a href="#" class="btn">view details</a>
+                    </div>
+                </div>
+            </div><!--نهاية البوكس الأول-->
+
+            <div class="box" id="hidden2">
+                <div class="image-container">
+
+                    <img src="images/homes/home4.jpg" alt="">
+                    <div class="info">
+                        <h3>1 days ago</h3>
+                        <h3>for sell</h3>
+                    </div>
+
+                    <div class="icons">
+                        <a href="#"><img src="images/fas fa-film.png" />
+                            <h3>1</h3>
+                        </a>
+                        <a href="#"><img src="images/fas fa-camera.png" />
+                            <h3>4</h3>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="box">
-                    <h3>extra links</h3>
-                    <a href="#">my account</a>
-                    <a href="#">my favorite</a>
-                    <a href="#">my list</a>
+                <div class="content">
+                    <div class="price">
+                        <h3>30,000,000 SAR</h3>
+                        <a href="#"><img src="images/fas fa-heart.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-envelope.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-phone.PNG" width="30" height="30" /></a>
+                    </div>
+                    <div class="location">
+                        <h3>modern mansion</h3>
+                        <p>Hattin , Riyadh - 400104</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 1750 sqft </h3>
+                        <h3> <i class="fas fa-bed"></i> 7 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 12 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">request info</a>
+                        <a href="#" class="btn">view details</a>
+                    </div>
+                </div>
+            </div><!--نهاية البوكس الثاني-->
+
+            <div class="box" id="hidden3">
+
+                <div class="image-container">
+                    <img src="images/homes/home3.jpg" alt="">
+
+                    <div class="info">
+                        <h3>14 days ago</h3>
+                        <h3>for sell</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><img src="images/fas fa-film.png" />
+                            <h3>1</h3>
+                        </a>
+                        <a href="#"><img src="images/fas fa-camera.png" />
+                            <h3>4</h3>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="box">
-                    <h3>follow us</h3>
-                    <a href="#">facebook</a>
-                    <a href="#">twitter</a>
-                    <a href="#">instagram</a>
-                    <a href="#">linkedin</a>
+                <div class="content">
+                    <div class="price">
+                        <h3>8,299,000 SAR</h3>
+                        <a href="#"><img src="images/fas fa-heart.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-envelope.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-phone.PNG" width="30" height="30" /></a>
+                    </div>
+                    <div class="location">
+                        <h3>modern mansion</h3>
+                        <p>Al Malqa, Riyadh - 400104</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 535 sqft </h3>
+                        <h3> <i class="fas fa-bed"></i> 4 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 3 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">request info</a>
+                        <a href="#" class="btn">view details</a>
+                    </div>
                 </div>
-            </div>
-            <div class="credit">Copyright &copy; 2032 All rights reserved |by </div>
+            </div><!--نهاية البوكس الثالث-->
+
+            <div class="box" id="hidden4">
+
+                <div class="image-container">
+                    <img src="images/homes/home6.jpg" alt="">
+                    <div class="info">
+                        <h3>2 days ago</h3>
+                        <h3>for sell</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><img src="images/fas fa-film.png" />
+                            <h3>1</h3>
+                        </a>
+                        <a href="#"><img src="images/fas fa-camera.png" />
+                            <h3>4</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>4,000,000 SAR</h3>
+                        <a href="#"><img src="images/fas fa-heart.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-envelope.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-phone.PNG" width="30" height="30" /></a>
+                    </div>
+                    <div class="location">
+                        <h3>Classic villa</h3>
+                        <p>Al Narjis, Riyadh - 400104</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 375 sqft </h3>
+                        <h3> <i class="fas fa-bed"></i> 4 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 3 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">request info</a>
+                        <a href="#" class="btn">view details</a>
+                    </div>
+                </div>
+            </div><!--نهاية البوكس الرابع-->
+
+            <div class="box" id="hidden5">
+                <div class="image-container">
+                    <img src="images/homes/home7.jpg" alt="">
+                    <div class="info">
+                        <h3>0 days ago</h3>
+                        <h3>for sell</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><img src="images/fas fa-film.png" />
+                            <h3>1</h3>
+                        </a>
+                        <a href="#"><img src="images/fas fa-camera.png" />
+                            <h3>4</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>3,100,000 SAR</h3>
+                        <a href="#"><img src="images/fas fa-heart.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-envelope.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-phone.PNG" width="30" height="30" /></a>
+                    </div>
+                    <div class="location">
+                        <h3>modern villa</h3>
+                        <p>Al Arid, Riyadh - 400104</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 324 sqft </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 4 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">request info</a>
+                        <a href="#" class="btn">view details</a>
+                    </div>
+                </div>
+            </div><!-- نهاية البوكس الخامس-->
+
+            <div class="box" id="hidden6">
+                <div class="image-container">
+                    <img src="images/homes/home8.jpg" alt="">
+                    <div class="info">
+                        <h3>5 days ago</h3>
+                        <h3>for rent</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><img src="images/fas fa-film.png" />
+                            <h3>1</h3>
+                        </a>
+                        <a href="#"><img src="images/fas fa-camera.png" />
+                            <h3>4</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>210,000 SAR</h3>
+                        <a href="#"><img src="images/fas fa-heart.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-envelope.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-phone.PNG" width="30" height="30" /></a>
+                    </div>
+                    <div class="location">
+                        <h3>modern Andalusian duplex</h3>
+                        <p>Hittin, Riyadh - 400104</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 1100 sqft </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 5 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">request info</a>
+                        <a href="#" class="btn">view details</a>
+                    </div>
+                </div>
+            </div><!--نهاية البوكس السادس-->
+
+            <div class="box" id="hidden7">
+                <div class="image-container">
+                    <img src="images/homes/home2.jpg" alt="">
+                    <div class="info">
+                        <h3>20 days ago</h3>
+                        <h3>for rent</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><img src="images/fas fa-film.png" />
+                            <h3>1</h3>
+                        </a>
+                        <a href="#"><img src="images/fas fa-camera.png" />
+                            <h3>4</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>300,000 SAR</h3>
+                        <a href="#"><img src="images/fas fa-heart.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-envelope.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-phone.PNG" width="30" height="30" /></a>
+                    </div>
+                    <div class="location">
+                        <h3>modern villa</h3>
+                        <p>Al Narjis, Riyadh - 400104</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 1005 sqft </h3>
+                        <h3> <i class="fas fa-bed"></i> 4 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 4 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">request info</a>
+                        <a href="#" class="btn">view details</a>
+                    </div>
+                </div>
+            </div><!-- نهاية البوكس السابع-->
+
+            <div class="box" id="hidden8">
+                <div class="image-container">
+                    <img src="images/homes/home5.jpg" alt="">
+                    <div class="info">
+                        <h3>7 days ago</h3>
+                        <h3>for rent</h3>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><img src="images/fas fa-film.png" />
+                            <h3>1</h3>
+                        </a>
+                        <a href="#"><img src="images/fas fa-camera.png" />
+                            <h3>4</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>270,000 SAR</h3>
+                        <a href="#"><img src="images/fas fa-heart.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-envelope.PNG" width="30" height="30" /></a>
+                        <a href="#"><img src="images/fas fa-phone.PNG" width="30" height="30" /></a>
+                    </div>
+                    <div class="location">
+                        <h3>modern villa</h3>
+                        <p>Al Malqa, Riyadh - 400104</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 437.5 sqft </h3>
+                        <h3> <i class="fas fa-bed"></i> 5 beds </h3>
+                        <h3> <i class="fas fa-bath"></i> 6 baths </h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">request info</a>
+                        <a href="#" class="btn">view details</a>
+                    </div>
+                </div>
+            </div><!--نهاية البوكس الثامن-->
         </div>
-    </footer> -->
-    <!-- Footer ends --> 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+
+        <div id="1"> </div>
+
+
+        <!-- Footer starts -->
+        <footer class="footer">
+
+            <div class="footer-container">
+                <div class="box-container">
+                    <div class="box">
+                        <h3>branch location</h3>
+                        <a href="#">Saudi Arabia, Riyadh</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>quick links</h3>
+                        <a href="#">home</a>
+                        <a href="#">services</a>
+                        <a href="#">featured</a>
+                        <a href="#">agents</a>
+                        <a href="#">contact</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>extra links</h3>
+                        <a href="#">my account</a>
+                        <a href="#">my favorite</a>
+                        <a href="#">my list</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>follow us</h3>
+                        <a href="#">facebook</a>
+                        <a href="#">twitter</a>
+                        <a href="#">instagram</a>
+                        <a href="#">linkedin</a>
+                    </div>
+                </div>
+                <div class="credit">Copyright &copy; 2032 All rights reserved |by </div>
+            </div>
+        </footer> 
+       <!-- Footer ends -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>
