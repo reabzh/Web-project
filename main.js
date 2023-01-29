@@ -59,4 +59,169 @@ function change() {
 
 }
 
+//-------------------------------------------
+
+ /* minimum prices:          
+    200,000SAR
+    300,000SAR
+    400,000SAR
+    500,000SAR
+
+    maximum prices:
+    2,000,000SAR
+    4,000,000SAR
+    8,000,000SAR
+    30,000,000SAR
+   
+    type:
+    duplex
+    villa
+    Mansion
+    */
+
+function show() {
+    var min = document.getElementById('minprice');
+    var max = document.getElementById('maxprice');
+    var type = document.getElementById('type');
+
+    var option1 = min.options[min.selectedIndex].value;
+    var option2 = max.options[max.selectedIndex].value;
+    var option3 = type.options[type.selectedIndex].value;
+
+   
+    if (option3 == "duplex") {
+
+        if (option1 == "200,000SAR" && option2 == "2,000,000SAR" || option2 == "4,000,000SAR"
+            || option2 == "8,000,000SAR" || option2 == "30,000,000SAR") {
+            //مافي الا بيت واحد دوبلكس فمهما اختار الماكس اي قيمة والسعر الاقل ثابت 200,000 رح يطلع هالبيت فقط
+            var x = document.getElementById("hidden6")
+            x.style.display = "block";
+            document.getElementById('1').innerHTML = x;
+        }
+
+        else if (option1 == "300,000SAR" && option2 == "2,000,000SAR" || option2 == "4,000,000SAR"
+            || option2 == "8,000,000SAR" || option2 == "30,000,000SAR") {
+            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+
+        }
+        else {
+            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+
+        }
+
+    }
+    //-------------------------------------------
+
+    if (option3 == "villa") {
+
+        if (option1 == "200,000SAR" || option1 == "300,000SAR" && option2 == "2,000,000SAR") {
+
+            var x = document.getElementById("hidden7");
+            var y = document.getElementById("hidden8")
+            x.style.display = "block";
+            y.style.display = "block";
+
+            document.getElementById('1').innerHTML = x;
+            document.getElementById('1').innerHTML = y;
+
+        }
+
+        else if (option1 == "200,000SAR" && option2 == "4,000,000SAR") {
+            var x = document.getElementById("hidden1");
+            var y = document.getElementById("hidden4")
+            var z = document.getElementById("hidden5");
+            var t = document.getElementById("hidden7");
+            var v = document.getElementById("hidden8");
+
+            x.style.display = "block";
+            y.style.display = "block";
+            z.style.display = "block";
+            t.style.display = "block";
+            v.style.display = "block";
+
+            document.getElementById('1').innerHTML = x;
+            document.getElementById('1').innerHTML = y;
+            document.getElementById('1').innerHTML = z;
+            document.getElementById('1').innerHTML = t;
+            document.getElementById('1').innerHTML = v;
+        }
+
+
+        else if (option1 == "300,000SAR" && option2 == "4,000,000SAR") {
+            var x = document.getElementById("hidden1");
+            var y = document.getElementById("hidden4")
+            var z = document.getElementById("hidden5");
+            var t = document.getElementById("hidden7");
+
+            x.style.display = "block";
+            y.style.display = "block";
+            z.style.display = "block";
+            t.style.display = "block";
+
+            document.getElementById('1').innerHTML = x;
+            document.getElementById('1').innerHTML = y;
+            document.getElementById('1').innerHTML = z;
+            document.getElementById('1').innerHTML = t;
+        }
+
+        else if (option1 == "400,000SAR" || option1 == "500,000SAR" && option2 == "4,000,000SAR") {
+            var x = document.getElementById("hidden1");
+            var y = document.getElementById("hidden4")
+            var z = document.getElementById("hidden5");
+
+            x.style.display = "block";
+            y.style.display = "block";
+            z.style.display = "block";
+
+            document.getElementById('1').innerHTML = x;
+            document.getElementById('1').innerHTML = y;
+            document.getElementById('1').innerHTML = z;
+        }
+
+        //مايشتغل هالحاله مدري ليه
+        else if (option2 == "8,000,000SAR" || option2 == " 30,000,000SAR") {
+
+            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+        }
+        else{
+            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+
+        }
+    }
+
+    //-------------------------------------------
+
+    if (option3 == "Mansion") {
+
+        if ( option2 == "2,000,000SAR" || option2 == "4,000,000SAR") {
+
+            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+        }
+
+        else if ( option2 == "8,000,000SAR" ) {
+
+            var x = document.getElementById("hidden3");
+            x.style.display = "block";
+
+            document.getElementById('1').innerHTML = x;
+        }
+
+        else if (option2 == "30,000,000SAR") {
+
+            var x = document.getElementById("hidden2");
+            var y = document.getElementById("hidden3");
+            x.style.display = "block";
+            y.style.display = "block";
+
+            document.getElementById('1').innerHTML = x;
+            document.getElementById('1').innerHTML = y;
+        }
+        else{
+            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+
+        }
+
+    }
+
+}
 window.addEventListener("load", start, false);
