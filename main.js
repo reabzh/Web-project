@@ -80,6 +80,8 @@ function change() {
     */
 
 function show() {
+    document.getElementById('1').innerHTML = "";
+
     var min = document.getElementById('minprice');
     var max = document.getElementById('maxprice');
     var type = document.getElementById('type');
@@ -88,103 +90,114 @@ function show() {
     var option2 = max.options[max.selectedIndex].value;
     var option3 = type.options[type.selectedIndex].value;
 
-   
+    var house1=document.getElementById("hidden1");
+    var house2=document.getElementById("hidden2");
+    var house3=document.getElementById("hidden3");
+    var house4=document.getElementById("hidden4");
+    var house5=document.getElementById("hidden5");
+    var house6=document.getElementById("hidden6");
+    var house7=document.getElementById("hidden7");
+    var house8=document.getElementById("hidden8");
+    
+    
     if (option3 == "duplex") {
 
-        if (option1 == "200,000SAR" && option2 == "2,000,000SAR" || option2 == "4,000,000SAR"
-            || option2 == "8,000,000SAR" || option2 == "30,000,000SAR") {
-            //مافي الا بيت واحد دوبلكس فمهما اختار الماكس اي قيمة والسعر الاقل ثابت 200,000 رح يطلع هالبيت فقط
-            var x = document.getElementById("hidden6")
-            x.style.display = "block";
-            document.getElementById('1').innerHTML = x;
-        }
-
-        else if (option1 == "300,000SAR" && option2 == "2,000,000SAR" || option2 == "4,000,000SAR"
-            || option2 == "8,000,000SAR" || option2 == "30,000,000SAR") {
-            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+        if (option1 == "200,000SAR") {
+            house1.style.display = "none";
+            house2.style.display = "none";
+            house3.style.display = "none";
+            house4.style.display = "none";
+            house5.style.display = "none";
+            house6.style.display = "block";
+            house7.style.display = "none";
+            house8.style.display = "none";    
 
         }
+
         else {
-            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+            house1.style.display = "none";
+            house2.style.display = "none";
+            house3.style.display = "none";
+            house4.style.display = "none";
+            house5.style.display = "none";
+            house6.style.display = "none";
+            house7.style.display = "none";
+            house8.style.display = "none";     
 
-        }
+            document.getElementById('1').innerHTML = "<p style='text-align: center; font-size:18px;'>Sorry we don't have any property matches you choices</p>";
 
-    }
+        } 
+
+    } 
     //-------------------------------------------
 
     if (option3 == "villa") {
 
         if (option1 == "200,000SAR" || option1 == "300,000SAR" && option2 == "2,000,000SAR") {
 
-            var x = document.getElementById("hidden7");
-            var y = document.getElementById("hidden8")
-            x.style.display = "block";
-            y.style.display = "block";
-
-            document.getElementById('1').innerHTML = x;
-            document.getElementById('1').innerHTML = y;
+            house1.style.display = "none";
+            house2.style.display = "none";
+            house3.style.display = "none";
+            house4.style.display = "none";
+            house5.style.display = "none";
+            house6.style.display = "none";
+            house7.style.display = "block";
+            house8.style.display = "block";   
 
         }
 
         else if (option1 == "200,000SAR" && option2 == "4,000,000SAR") {
-            var x = document.getElementById("hidden1");
-            var y = document.getElementById("hidden4")
-            var z = document.getElementById("hidden5");
-            var t = document.getElementById("hidden7");
-            var v = document.getElementById("hidden8");
-
-            x.style.display = "block";
-            y.style.display = "block";
-            z.style.display = "block";
-            t.style.display = "block";
-            v.style.display = "block";
-
-            document.getElementById('1').innerHTML = x;
-            document.getElementById('1').innerHTML = y;
-            document.getElementById('1').innerHTML = z;
-            document.getElementById('1').innerHTML = t;
-            document.getElementById('1').innerHTML = v;
+            
+            house1.style.display = "block";
+            house2.style.display = "none";
+            house3.style.display = "none";
+            house4.style.display = "block";
+            house5.style.display = "block";
+            house6.style.display = "none";
+            house7.style.display = "block";
+            house8.style.display = "block";   
+            
         }
 
 
         else if (option1 == "300,000SAR" && option2 == "4,000,000SAR") {
-            var x = document.getElementById("hidden1");
-            var y = document.getElementById("hidden4")
-            var z = document.getElementById("hidden5");
-            var t = document.getElementById("hidden7");
+            
+            house1.style.display = "block";
+            house2.style.display = "none";
+            house3.style.display = "none";
+            house4.style.display = "block";
+            house5.style.display = "block";
+            house6.style.display = "none";
+            house7.style.display = "block";
+            house8.style.display = "none";  
+        
 
-            x.style.display = "block";
-            y.style.display = "block";
-            z.style.display = "block";
-            t.style.display = "block";
-
-            document.getElementById('1').innerHTML = x;
-            document.getElementById('1').innerHTML = y;
-            document.getElementById('1').innerHTML = z;
-            document.getElementById('1').innerHTML = t;
         }
 
         else if (option1 == "400,000SAR" || option1 == "500,000SAR" && option2 == "4,000,000SAR") {
-            var x = document.getElementById("hidden1");
-            var y = document.getElementById("hidden4")
-            var z = document.getElementById("hidden5");
+         
+            house1.style.display = "block";
+            house2.style.display = "none";
+            house3.style.display = "none";
+            house4.style.display = "block";
+            house5.style.display = "block";
+            house6.style.display = "none";
+            house7.style.display = "none";
+            house8.style.display = "none";  
 
-            x.style.display = "block";
-            y.style.display = "block";
-            z.style.display = "block";
-
-            document.getElementById('1').innerHTML = x;
-            document.getElementById('1').innerHTML = y;
-            document.getElementById('1').innerHTML = z;
         }
 
-        //مايشتغل هالحاله مدري ليه
-        else if (option2 == "8,000,000SAR" || option2 == " 30,000,000SAR") {
-
-            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
-        }
         else{
-            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+            house1.style.display = "none";
+            house2.style.display = "none";
+            house3.style.display = "none";
+            house4.style.display = "none";
+            house5.style.display = "none";
+            house6.style.display = "none";
+            house7.style.display = "none";
+            house8.style.display = "none";  
+
+            document.getElementById('1').innerHTML = "<p style='text-align: center; font-size:18px;'>Sorry we don't have any property matches you choices</p>";
 
         }
     }
@@ -194,30 +207,44 @@ function show() {
     if (option3 == "Mansion") {
 
         if ( option2 == "2,000,000SAR" || option2 == "4,000,000SAR") {
+            house1.style.display = "none";
+            house2.style.display = "none";
+            house3.style.display = "none";
+            house4.style.display = "none";
+            house5.style.display = "none";
+            house6.style.display = "none";
+            house7.style.display = "none";
+            house8.style.display = "none";  
 
-            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+            document.getElementById('1').innerHTML = "<p style='text-align: center; font-size:18px;'>Sorry we don't have any property matches you choices</p>";
         }
 
         else if ( option2 == "8,000,000SAR" ) {
 
-            var x = document.getElementById("hidden3");
-            x.style.display = "block";
-
-            document.getElementById('1').innerHTML = x;
+            house1.style.display = "none";
+            house2.style.display = "none";
+            house3.style.display = "block";
+            house4.style.display = "none";
+            house5.style.display = "none";
+            house6.style.display = "none";
+            house7.style.display = "none";
+            house8.style.display = "none";  
         }
 
         else if (option2 == "30,000,000SAR") {
 
-            var x = document.getElementById("hidden2");
-            var y = document.getElementById("hidden3");
-            x.style.display = "block";
-            y.style.display = "block";
+            house1.style.display = "none";
+            house2.style.display = "block";
+            house3.style.display = "block";
+            house4.style.display = "none";
+            house5.style.display = "none";
+            house6.style.display = "none";
+            house7.style.display = "none";
+            house8.style.display = "none"; 
 
-            document.getElementById('1').innerHTML = x;
-            document.getElementById('1').innerHTML = y;
         }
         else{
-            document.getElementById('1').innerHTML = "Sorry we don't have any property matches you choices";
+            document.getElementById('1').innerHTML = "<p style='text-align: center; font-size:18px;'>Sorry we don't have any property matches you choices</p>";
 
         }
 
