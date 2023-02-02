@@ -1,4 +1,4 @@
-var express = require('express');
+/*var express = require('express');
 var app = express();
 var bodyparser = require('body-parser');
 var urlncodedParser = bodyparser.urlencoded({ extended: false });
@@ -14,4 +14,4 @@ app.post('/post_contact', urlncodedParser, function (req, res) {
 });
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
-});
+});*/
