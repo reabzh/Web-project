@@ -1,18 +1,14 @@
-/** const express = require('express');
+const express = require('express');
 const app = express();
-
-
+ 
 app.get('/get_contact', function (req, res) {
-    let respns = {
-        name: req.body.name,
-        mail: req.body.lastname,
-        phone: req.body.phone,
-        email: req.body.email
-    };
+    let respnse = {
+        name: req.query.name,
+        password: req.query.password
+      };
     console.log(respnse);
-    res.end(JSON.stringify(respnse));
+    res.end(JSON.stringify(respnse));});
 
-});
 app.listen(3000, function () {
-    console.log("Example app-listening on port-30001");**/
-});
+    console.log('Example app listening on port 3000! http://localhost:3000');
+}); 
