@@ -1,7 +1,7 @@
 var http = require('http');
 var postHTML =
 '<html><head> <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> <link rel="stylesheet" href="logstle.css"> </head>' +
-'<body><div><p><div class="top-header"><span >Have an account?</span>  <h3 class="lg">LogIn</h3></p>' +
+'<body> <div class="boxlogIn"> <div class="containerlogIn"> <div class="top-header">  <span class="lg">Have an account?</span>  <h3 class="lg">LogIn</h3></div>' +
 '<form action="/" method="POST"><div class="input-field">' +
 '<input type="text" class="input" placeholder="Username" id="firstname" name="firstname" required><i class="bx bx-user"></i></div>' +
 ' <div class="input-field"><input type="password" class="input" placeholder="Password" id="password" name="password" required>   <i class="bx bx-lock-alt"></i></div>' +
@@ -25,6 +25,9 @@ http.createServer(function (req, res) {
     }
 }).listen(3000);
 console.log("server running");
+
+
+ 
 
 
 
