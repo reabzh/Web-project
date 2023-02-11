@@ -10,6 +10,6 @@ app.post('/post_contact', urlncodedParser, function (req, res) {
     console.log(respnse);
     res.end(JSON.stringify(respnse));
 });
-app.listen(3300, function () {
-    console.log('Example app post listening on port 3300!');
+app.listen(3000, function () {
+    console.log('Example app post listening on port 3000!');
 });  
