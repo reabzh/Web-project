@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="C:\Users\DELL\Downloads\Web-project-main\Web-project-main/style.css">
+    </head>
+
+    <body class="logIn">
+        <div class="boxlogIn">
+            <div class="containerlogIn">
+                <div class="top-header">
+                    <span class="lg">Have an account?</span>
+                    <h3 class="lg">LogIn</h3>
+                </div>
+                <form action="http://localhost:3300/post_contact" method="post" class="form-inline">
+                    <div class="input-field">
+                        <input type="text" class="input" placeholder="Username" name="name" id="name" required>
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="input" placeholder="Password" name="password" id="password" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" class="submit" value="Login">
+                    </div>
+                    <div class="bottom">
+                        <div class="left">
+                            <input type="checkbox" id="check">
+                            <label for="check">Remember Me</label>
+                        </div>
+                        <div class="right">
+                            <label for="check"><a href="#">Forget your password?</a></label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
